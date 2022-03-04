@@ -1,0 +1,14 @@
+.header-title {
+    position: relative;
+    text-align: center;
+}
+
+
+.search-cont {
+    position: relative;
+    left: 40vw;
+    /* justify-content: center;
+    align-items: center; */
+
+    margin: 0 auto;
+}
