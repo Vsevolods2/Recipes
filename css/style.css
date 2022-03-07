@@ -1,14 +1,91 @@
+* {
+    box-sizing: border-box;
+}
+
 .header-title {
+    text-align: center;
+    padding: 40px 0 40px 0;
+    margin: 0;
+    font-family: "SeymourOne-Regular", sans-serif;
+}
+
+/* customize our search-bar */
+.search-cont {
     position: relative;
+    width: 300px;
+    padding: 0 0 40px 0;
+    left: 40vw;
+}
+
+input {
+    position: absolute;
+    height: 42px;
+    width: 0;
+    padding: 0 42px 0 15px;
+    outline: none;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid transparent;
+    /* transition:  */
+}
+
+input:focus {
+    width: 300px;
+    border-bottom: 2px solid #F9F0DA;
+}
+
+button {
+    background: #c74b7d;
+    border: none;
+    height: 42px;
+    width: 42px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+}
+
+button:before {
+    content: '\1F50D';
+    font-size: 12px;
+}
+
+/* end of customizing our search-bar */
+
+.category-title {
+    font-family: "ZenKurenaido-Regular", sans-serif;
+    font-size: 40px;
+    margin: 0 auto;
+    padding: 40px 0 40px 0;
+    text-align: center;
+}
+
+.category-blocks {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.category-pic img {
+    width: 105px;
+    height: 105px;
+}
+
+.category-text {
+    font-family: "ZenKurenaido-Regular", sans-serif;
+    font-size: 16px;
+}
+
+.category-text {
     text-align: center;
 }
 
 
-.search-cont {
-    position: relative;
-    left: 40vw;
-    /* justify-content: center;
-    align-items: center; */
+@font-face {
+    font-family: "SeymourOne-Regular";
+    src: url("/fonts/SeymourOne-Regular.ttf");
+}
 
-    margin: 0 auto;
+@font-face {
+    font-family: "ZenKurenaido-Regular";
+    src: url("/fonts/ZenKurenaido-Regular.ttf")
 }
